@@ -172,11 +172,11 @@ class _SettingScreenState extends State<SettingScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   GestureDetector(
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => const ChangePasswordScreen(),
-                      ),
-                    ),
+                    // onTap: () => Navigator.of(context).push(
+                    //   MaterialPageRoute(
+                    //     builder: (context) => const ChangePasswordScreen(),
+                    //   ),
+                    // ),
                     child: CustomSettingListTilewidget(
                       title: "Frequently Asked Questions",
                     ),

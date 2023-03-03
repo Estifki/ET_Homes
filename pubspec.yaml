@@ -51,6 +51,7 @@ dependencies:
   flutter_local_notifications: ^13.0.0
   flutter_offline: ^2.1.0
   expandable_text: ^2.3.0
+  flutter_config: ^2.0.0
   
   firebase_core: 
   firebase_auth: 

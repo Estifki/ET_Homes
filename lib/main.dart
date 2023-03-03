@@ -56,32 +56,18 @@ class _MyAppState extends State<MyApp> {
   }
 
   @override
-  Widget build(BuildContext context)  {
+  Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    
+
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (_) => AuthProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => LocationProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => BannerProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => PropertiesProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => SaveForLaterProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => AgentProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => darkThemeProvider,
-        ),
+        ChangeNotifierProvider(create: (_) => AuthProvider()),
+        ChangeNotifierProvider(create: (_) => LocationProvider()),
+        ChangeNotifierProvider(create: (_) => BannerProvider()),
+        ChangeNotifierProvider(create: (_) => PropertiesProvider()),
+        ChangeNotifierProvider(create: (_) => SaveForLaterProvider()),
+        ChangeNotifierProvider(create: (_) => AgentProvider()),
+        ChangeNotifierProvider(create: (_) => darkThemeProvider),
       ],
       child: Consumer<DarkThemeProvider>(builder: (context, theme, _) {
         return MaterialApp(

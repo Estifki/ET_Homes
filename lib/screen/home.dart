@@ -197,8 +197,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 // color: Colors.red,
 
                 height: screenSize.width > 370
-                    ? screenSize.height * 0.152
-                    : screenSize.height * 0.18,
+                    ? screenSize.height * 0.154
+                    : screenSize.height * 0.182,
                 child: FutureBuilder<List<PropertyOwnersModel>>(
                   future: _ownersData,
                   builder: (context, snapshot) {
