@@ -182,7 +182,9 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
             ),
           );
         });
-      } catch (e) {}
+      } catch (_) {
+        rethrow;
+      }
     }
   }
 }

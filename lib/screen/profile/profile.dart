@@ -196,7 +196,9 @@ class _ProfileScreentState extends State<ProfileScreen> {
                                       scheme: "https",
                                       path: "realesatate-landing.vercel.app/"),
                                 );
-                              } catch (e) {}
+                              } catch (_) {
+                                rethrow;
+                              }
                             },
                             child: Text(
                               "Request for Property Listing",

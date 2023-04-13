@@ -83,8 +83,6 @@ class PropertiesProvider with ChangeNotifier {
     try {
       http.Response response = await http.get(Uri.parse(url));
 
-      print(response.statusCode);
-      print(response.body);
       if (response.statusCode == 200) {
         var responseData = jsonDecode(response.body);
         _totalPage = responseData["totalPages"];
