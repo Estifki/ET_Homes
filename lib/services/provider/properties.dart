@@ -82,6 +82,9 @@ class PropertiesProvider with ChangeNotifier {
     String url = "${AppConst.baseUrl}/property?page=$currentPage";
     try {
       http.Response response = await http.get(Uri.parse(url));
+
+      print(response.statusCode);
+      print(response.body);
       if (response.statusCode == 200) {
         var responseData = jsonDecode(response.body);
         _totalPage = responseData["totalPages"];
